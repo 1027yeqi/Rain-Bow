@@ -135,17 +135,17 @@ nav {
 }
 
 .intro {
-    width: 95%;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
-    padding: 0 30px;
+
 }
 
 .intro,
 h2 {
     font-size: 45px;
     text-align: center;
-    margin: 10px 0 30px 10px;
+    margin-bottom: 0;
     color: #666666;
 }
 
@@ -155,55 +155,45 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    padding: 10px 10px;
+
 
 }
 
 .timeline p {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 .timeline span {
     font-size: 15px;
     text-align: left;
+    line-height: 30px;
 }
 
 .timeline strong {
-    font-size: 20px;
-    text-align: center;
-    justify-content: center;
+    margin-bottom: 0;
+    display: grid;
+    place-items: center;
 }
-
-/*線の起点とするためrelativeを設定*/
 .timeline,
 .top-left,
 .top-right {
     display: flex;
-    position: relative;
+
     flex-flow: column;
     width: 50%;
-    padding: 0 0 20px 0;
+
 
 }
 
-.timeline,
-.top-left span strong .top-right span strong {
-    display: block;
-    padding: 10px 0;
-    font-size: 25px;
-}
+
 
 .biaozhi .top-left,
 .biaozh .top-right {
-    line-height: 15px;
-    width: 50%;
-    height: 40%;
     margin: 0 auto;
-    line-height: 20px;
+    line-height: 25px;
 }
-
 
 .top-left:hover,
 .top-right:hover {
@@ -225,73 +215,41 @@ h2 {
             /* 紫色，透明度为 0.1 */
         );
 }
-
-.top-left {
-    align-self: flex-start;
-    transform: translateX(-270px);
-}
-
-.top-right {
-    align-self: flex-end;
-    transform: translateX(300px);
-}
-
-.border-line {
-    /*線の位置*/
-    position: relative;
-    left: 0.2em;
-    top: 0;
-    width: 2px;
-    /*線の太さ*/
-    height: 0;
-    /*はじめは高さを0に*/
-    background: #ccc;
-}
-
-/* 圆点 */
-.line {
-    width: 10px;
-    height: 10px;
-    background: #ccc;
-    margin: 0 auto;
-    border-radius: 50%;
-    position: relative;
-    top: -160px;
-}
-
 .biaozhi {
+    width: 100%;
     display: flex;
-
-
-}
-
-.biaozhi img {
-    width: 130px;
-    top: -140px;
-    position: relative;
-    flex-flow: column;
+    margin-top: 100px;
     margin-left: 650px;
-}
-
-.biaozh img {
-    width: 130px;
-    height: 130px;
-    position: relative;
-    flex-flow: column;
-    padding: 0 0 20px 0;
+    gap: 100px;
 }
 
 .biaozh {
+    width: 100%;
     display: flex;
-
+    margin-top: 100px;
+    margin-left: 900px;
+    gap: 120px;
 }
 
+.biaozhi img {
+    margin-top: 100px;
+}
+
+.biaozh img {
+
+    margin-top: 100px;
+}
 .top-left:hover,
 .top-right:hover {
     color: #666666;
     background: linear-gradient(to right,
             rgba(255, 0, ))
 }
+
+
+
+   
+
 
 .rainbow {
     width: 90%;
